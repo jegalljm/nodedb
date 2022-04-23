@@ -27,7 +27,7 @@ _database_keys_map = {
 
 _base_database_localmongodb = {
     'host': 'localhost',
-    'port': 27017,
+    'port': 27018,
     'name': 'bigchain',
     'replicaset': None,
     'login': None,
