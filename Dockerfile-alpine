@@ -16,7 +16,7 @@ RUN apk --update add sudo \
 # to force stdin, stdout and stderr to be totally unbuffered and to capture logs/outputs
 ENV PYTHONUNBUFFERED 0
 
-ENV BIGCHAINDB_DATABASE_PORT 27017
+ENV BIGCHAINDB_DATABASE_PORT 27018
 ENV BIGCHAINDB_DATABASE_BACKEND $backend
 ENV BIGCHAINDB_SERVER_BIND 0.0.0.0:9984
 ENV BIGCHAINDB_WSSERVER_HOST 0.0.0.0
