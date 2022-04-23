@@ -83,7 +83,7 @@ spec:
             add:
             - FOWNER
         ports:
-        - containerPort: 27017
+        - containerPort: 27018
           protocol: TCP
           name: mdb-api-port
         volumeMounts:

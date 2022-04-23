@@ -43,7 +43,7 @@ Configure MongoDB Cloud Manager for Monitoring Step by Step
     For example, if the ``mdb-instance-name`` is set to ``mdb-instance-0``,
     enter ``mdb-instance-0`` as the value in this field.
 
-  * Enter the port number as ``27017``, with no authentication.
+  * Enter the port number as ``27018``, with no authentication.
     
   * If you have authentication enabled, select the option to enable
     authentication and specify the authentication mechanism as per your

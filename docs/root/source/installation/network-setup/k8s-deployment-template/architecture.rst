@@ -84,7 +84,7 @@ BigchainDB Node Diagram
   |                                  |                                |                             |                                    |
   |                                  |                                |                             |                                    |
   |                                  |                                |                             |                                    |
-  |                                  |                        "27017" |                             |                                    |
+  |                                  |                        "27018" |                             |                                    |
   |                                  v                                |                             v                                    |
   |                            +-------------+                        |                         +------------+                           |
   |                            |"HTTPS"      |                        |    +------------------> |"Tendermint"|                           |
@@ -184,13 +184,13 @@ entrypoint for:
    #. BigchainDB Service if it is a GET request.
 
 
-We use an NGINX TCP proxy on port 27017 (configurable) at the cloud
+We use an NGINX TCP proxy on port 27018 (configurable) at the cloud
 entrypoint for:
 
 #. Rate Limiting: We configure NGINX to allow only a certain number of requests
    (configurable) which prevents DoS attacks.
 
-#. Request Routing: For connections on port 27017 (or the configured MongoDB
+#. Request Routing: For connections on port 27018 (or the configured MongoDB
    public api port), the connection is proxied to the MongoDB Service.
 
 

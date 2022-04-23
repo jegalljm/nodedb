@@ -14,8 +14,8 @@ spec:
   selector:
     app: mdb-instance-0-ss
   ports:
-  - port: 27017
-    targetPort: 27017
+  - port: 27018
+    targetPort: 27018
     name: mdb-port
     protocol: TCP
   type: ClusterIP

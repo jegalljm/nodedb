@@ -23,8 +23,8 @@ spec:
     targetPort: 80
     name: ngx-public-bdb-port-http
     protocol: TCP
-  - port: 27017
-    targetPort: 27017
+  - port: 27018
+    targetPort: 27018
     name: ngx-public-mdb-port
     protocol: TCP
   type: LoadBalancer
@@ -55,11 +55,11 @@ spec:
         - name: DNS_SERVER
           value: "10.0.0.10"
         - name: MONGODB_FRONTEND_PORT
-          value: "27017"
+          value: "27018"
         - name: MONGODB_BACKEND_HOST
           value: "mdb.default.svc.cluster.local"
         - name: MONGODB_BACKEND_PORT
-          value: "27017"
+          value: "27018"
         - name: BIGCHAINDB_BACKEND_HOST
           value: "bdb.default.svc.cluster.local"
         - name: BIGCHAINDB_API_PORT
@@ -67,7 +67,7 @@ spec:
         - name: BIGCHAINDB_WS_PORT
           value: "9985"
         ports:
-        - containerPort: 27017
+        - containerPort: 27018
           protocol: TCP
         - containerPort: 80
           protocol: TCP

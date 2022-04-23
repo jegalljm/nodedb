@@ -32,7 +32,7 @@ directories:
   - "{{ mongodb_log_path }}"
   - "{{ mongodb_config_path }}"
 
-mongodb_port: 27017
+mongodb_port: 27018
 
 # Docker configuration
 bigchaindb_docker_net: "bigchaindb_docker_net"

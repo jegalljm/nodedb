@@ -670,7 +670,7 @@ To test the MongoDB instance:
 
    $ dig +noall +answer _mdb-port._tcp.mdb-instance-0.default.svc.cluster.local SRV
 
-   $ curl -X GET http://mdb-instance-0:27017
+   $ curl -X GET http://mdb-instance-0:27018
 
 The ``nslookup`` command should output the configured IP address of the service
 (in the cluster).
@@ -721,7 +721,7 @@ To test the vanilla NGINX instance:
 
    $ wsc -er ws://ngx-http-instance-0/api/v1/streams/valid_transactions
 
-   $ curl -X GET http://ngx-http-instance-0:27017
+   $ curl -X GET http://ngx-http-instance-0:27018
 
 The above curl command should result in the response
 ``It looks like you are trying to access MongoDB over HTTP on the native driver port.``
@@ -742,7 +742,7 @@ To test the NGINX instance with HTTPS and 3scale integration:
 
    $ wsc -er wss://<node-fqdn>/api/v1/streams/valid_transactions
 
-   $ curl -X GET http://<node-fqdn>:27017
+   $ curl -X GET http://<node-fqdn>:27018
 
 The above curl command should result in the response
 ``It looks like you are trying to access MongoDB over HTTP on the native driver port.``

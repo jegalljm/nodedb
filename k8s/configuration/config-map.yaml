@@ -60,7 +60,7 @@ data:
 
   # mongodb-backend-port is the port on which MongoDB is actually
   # available/listening for requests.
-  mongodb-backend-port: "27017"
+  mongodb-backend-port: "27018"
 
   # TODO: Change `openresty` to `apicast`
   # openresty-backend-port is the port number on which OpenResty is listening

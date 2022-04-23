@@ -40,7 +40,7 @@ $ docker run \
   --name bigchaindb \
   --publish 9984:9984 \
   --publish 9985:9985 \
-  --publish 27017:27017 \
+  --publish 27018:27018 \
   --publish 26657:26657 \
   --volume $HOME/bigchaindb_docker/mongodb/data/db:/data/db \
   --volume $HOME/bigchaindb_docker/mongodb/data/configdb:/data/configdb \
@@ -55,7 +55,7 @@ Let's analyze that command:
 * `publish 9984:9984` map the host port `9984` to the container port `9984`
  (the BigchainDB API server) 
   * `9985` BigchainDB Websocket server
-  * `27017` Default port for MongoDB
+  * `27018` Default port for MongoDB
   * `26657` Tendermint RPC server
 * `--volume "$HOME/bigchaindb_docker/mongodb:/data"` map the host directory
  `$HOME/bigchaindb_docker/mongodb` to the container directory `/data`;

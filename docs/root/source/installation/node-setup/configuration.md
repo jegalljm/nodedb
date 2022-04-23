@@ -76,7 +76,7 @@ To use x.509 certificate authentication, a MongoDB instance must be running some
 ```text
 export BIGCHAINDB_DATABASE_BACKEND=localmongodb
 export BIGCHAINDB_DATABASE_HOST=localhost
-export BIGCHAINDB_DATABASE_PORT=27017
+export BIGCHAINDB_DATABASE_PORT=27018
 export BIGCHAINDB_DATABASE_NAME=database8
 export BIGCHAINDB_DATABASE_CONNECTION_TIMEOUT=5000
 export BIGCHAINDB_DATABASE_MAX_TRIES=3
@@ -90,7 +90,7 @@ If (no environment variables were set and there's no local config file), or you 
 "database": {
     "backend": "localmongodb",
     "host": "localhost",
-    "port": 27017,
+    "port": 27018,
     "name": "bigchain",
     "connection_timeout": 5000,
     "max_tries": 3,

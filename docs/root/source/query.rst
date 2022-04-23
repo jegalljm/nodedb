@@ -24,7 +24,7 @@ How to Connect to MongoDB
 
 Before you can query a MongoDB database, you must connect to it, and to do that, you need to know its hostname and port.
 
-If you're running a BigchainDB node on your local machine (e.g. for dev and test), then the hostname should be ``localhost`` and the port should be ``27017``, unless you did something to change those values. If you're running a BigchainDB node on a remote machine and you can SSH to that machine, then the same is true.
+If you're running a BigchainDB node on your local machine (e.g. for dev and test), then the hostname should be ``localhost`` and the port should be ``27018``, unless you did something to change those values. If you're running a BigchainDB node on a remote machine and you can SSH to that machine, then the same is true.
 
 If you're running a BigchainDB node on a remote machine and you configured its MongoDB to use auth and to be publicly-accessible (to people with authorization), then you can probably figure out its hostname and port.
 
@@ -51,7 +51,7 @@ For example, if you're on a machine that's running a default BigchainDB node, th
 
     $ mongo
     MongoDB shell version v3.6.5
-    connecting to: mongodb://127.0.0.1:27017
+    connecting to: mongodb://127.0.0.1:27018
     MongoDB server version: 3.6.4
     ...
     > show dbs
@@ -74,7 +74,7 @@ For example, if you're on a machine that's running a default BigchainDB node, th
 
 The above example illustrates several things:
 
-* When you don't specify the hostname or port, the Mongo Shell assumes they are ``localhost`` and ``27017``, respectively. (``localhost`` had IP address 127.0.0.1 on the machine in question, an Ubuntu machine.)
+* When you don't specify the hostname or port, the Mongo Shell assumes they are ``localhost`` and ``27018``, respectively. (``localhost`` had IP address 127.0.0.1 on the machine in question, an Ubuntu machine.)
 * BigchainDB stores its data in a database named ``bigchain``.
 * The ``bigchain`` database contains several `collections <https://docs.mongodb.com/manual/core/databases-and-collections/>`_.
 * Votes aren't stored in any collection, currently. They are all handled and stored by Tendermint in its own (LevelDB) database.

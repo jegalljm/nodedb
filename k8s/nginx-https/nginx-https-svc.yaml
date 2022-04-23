@@ -22,8 +22,8 @@ spec:
     targetPort: 443
     name: public-secure-node-port
     protocol: TCP
-  - port: 27017
-    targetPort: 27017
+  - port: 27018
+    targetPort: 27018
     name: public-mdb-port
     protocol: TCP
   - port: 9986

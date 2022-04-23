@@ -9,5 +9,5 @@ COPY mongod.conf.template /etc/mongod.conf
 COPY configure_mdb_users.template.js /configure_mdb_users.js
 COPY mongod_entrypoint.bash /
 VOLUME /data/db /data/configdb /etc/mongod/ssl /etc/mongod/ca
-EXPOSE 27017
+EXPOSE 27018
 ENTRYPOINT ["/mongod_entrypoint.bash"]

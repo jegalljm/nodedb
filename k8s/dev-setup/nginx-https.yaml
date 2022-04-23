@@ -40,8 +40,8 @@ spec:
     targetPort: 80
     name: public-insecure-node-port
     protocol: TCP
-  - port: 27017
-    targetPort: 27017
+  - port: 27018
+    targetPort: 27018
     name: public-mdb-port
     protocol: TCP
   type: LoadBalancer
@@ -72,11 +72,11 @@ spec:
         - name: DNS_SERVER
           value: "10.0.0.10"
         - name: MONGODB_FRONTEND_PORT
-          value: "27017"
+          value: "27018"
         - name: MONGODB_BACKEND_HOST
           value: "mdb.default.svc.cluster.local"
         - name: MONGODB_BACKEND_PORT
-          value: "27017"
+          value: "27018"
         - name: OPENRESTY_BACKEND_PORT
           value: "80"
         - name: OPENRESTY_BACKEND_HOST
@@ -90,7 +90,7 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
-        - containerPort: 27017
+        - containerPort: 27018
           protocol: TCP
         - containerPort: 8888
           protocol: TCP
